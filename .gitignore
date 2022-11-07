@@ -1,2 +1,6 @@
 node_modules
 src
+gulpfile.js
+.gitignore
+package-lock.json
+package.json
