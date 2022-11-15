@@ -14,25 +14,28 @@
 
 </head>
 <body>
-    <nav class="wrapperPage" >
-        <div class="nav__logo">
-            <img src="images/logo/Vectorsvg.svg" alt="logo" class="">
-            <div>
-                <h2>PHOENIX</h2>
-                <p>BIOENERGY</p>
+    <div class="wrapperPage">
+        <nav>
+            <div class="nav__logo">
+                <img src="images/logo/Vectorsvg.svg" alt="logo" class="">
+                <div>
+                    <h2>PHOENIX</h2>
+                    <p>BIOENERGY</p>
+                </div>
             </div>
-        </div>
-        <div class="nav__menu">
-            <a href="index.html">Main</a>
-            <a href="product.html">product</a>
-            <a href="about.html">About us</a>
-            <a href="contact.html">Contact</a>
-            <a href="certificates.html">Certificates</a>
-        </div>
-        <div class="nav__btn">
-            <button class="btn">Call me back</button>
-        </div>
-    </nav>
+            <ul class="nav__menu">
+                <li class="nav__menu__item" ><a href="index.html">Main</a></li>
+                <li class="nav__menu__item"><a href="product.html">product</a></li>
+                <li class="nav__menu__item"><a href="about.html">About us</a></li>
+                <li class="nav__menu__item"><a href="contact.html">Contact</a></li>
+                <li class="nav__menu__item"><a href="certificates.html">Certificates</a></li>
+            </ul>
+            <div class="nav__btn">
+                <button class="btn">Call me back</button>
+            </div>
+            <div class="burger"><span></span></div>
+        </nav>
+    </div>
 
     <div class="wrapperPage">
         <section class="promo">
@@ -79,12 +82,12 @@
             <p>for clean biomass energy to Europe’s leading energy companies <br> sing sea vessels of 3.000 to 30.000 tons.</p>
             <div class="form" action="">
                 <div class="email">
-                    <input  placeholder=" " type="text">
-                    <label for=""> Enter your name</label>
+                    <input  placeholder="Enter your name" type="text">
+                    <!-- <label for=""> Enter your name</label> -->
                 </div>
                 <div class="password">
-                    <input id="pass" placeholder=" " type="text">
-                    <label for="pass"> Enter your phone</label>
+                    <input class="passw" id="pass" placeholder="Enter your phone" type="text">
+                    <!-- <label for="pass"> Enter your phone</label> -->
                 </div>
                 <button class="btn">Call me</button>
             </div>
@@ -93,28 +96,28 @@
         <section class="catalog">
             <h2>Why we are?</h2>
             <div class="row">
-                <div  class="col-md-4 catalog__content" >
+                <div  class="col-xl-4 offset-xl-0  col-lg-6 offset-lg-0 col-md-6 offset-md-0 offset-sm-3 col-sm-9 catalog__content" >
                     <div class="wrap"><img src="images/svg/Group.svg" alt=""></div>
                     <div>
                         <h3>Responsible Forestry</h3>
                         <p>Biomass sourced from responsible <br> manufacturers who share our belief in <br> sustainable forestry.</p>
                     </div>
                 </div>
-                <div class="col-md-4  catalog__content" >
+                <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-0 col-md-6 offset-md-0 offset-sm-3 col-sm-9 catalog__content" >
                     <div class="wrap"><img src="images/svg/Message.svg" alt=""></div>
                     <div>
                         <h3>Multilingual Client Support</h3>
                         <p>Our client success managers are <br> fluent in all major European <br> languages.</p>
                     </div>
                 </div>
-                <div class="col-md-4 catalog__content">
+                <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-0 col-md-6 offset-md-0 offset-sm-3 col-sm-9 catalog__content">
                     <div class="wrap"><img src="images/svg/client.svg" alt=""></div>
                     <div>
                         <h3>Client-centric B2B Approach</h3>
                         <p>We appreciate the human element <br> in B2B relationships. B2B=H2H.</p>
                     </div>
                 </div>
-                <div class="col-md-4  catalog__content">
+                <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-0 col-md-6 offset-md-0 offset-sm-3 col-sm-9 catalog__content">
                     <div class="wrap"><img src="images/svg/Group.svg" alt=""></div>
                     <div>
                         <h3>Certified Wood Bioenergy</h3>
@@ -122,7 +125,7 @@
                     </div>
                 </div>
     
-                <div class="col-md-4  catalog__content" class="break">
+                <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-0 col-md-6 offset-md-0 offset-sm-3 col-sm-9 catalog__content" class="break">
                     <div class="wrap"><img src="images/svg/9.svg" alt=""></div>
                     <div>
                         <h3>9 years on the market</h3>
@@ -130,7 +133,7 @@
                     </div>
                 </div>
     
-                <div class="col-md-4  catalog__content">
+                <div class="col-xl-4 offset-xl-0 col-lg-6 offset-lg-0 col-md-6 offset-md-0 offset-sm-3 col-sm-9 catalog__content">
                     <div class="wrap"><img src="images/svg/customers.png" alt=""></div>
                     <div>
                         <h3>1,587 happy customers</h3>
@@ -142,7 +145,7 @@
         </section>
     
         <section class="info">
-            <div class="about">
+            <div class="info__about">
                 <div class="wrap"><img src="images/svg/i.svg" alt=""></div>
                 <h2>About us</h2>
                 
@@ -183,10 +186,10 @@
                 <img src="images/logo/Vectorwhite.svg" alt="logo" class="">
                 <div>
                     <h2>PHOENIX</h2>
-                    <p>BIOENERGY</p>
+                    <p class="footer_Bioenergy">BIOENERGY</p>
                 </div>
             </div>
-            <p> © 2022 PHOENİX BIOENERGY <br> ORMAN ÜRÜNLERİ SANAYİ VE DIŞ  <br>TİCARET LİMİTED ŞİRKETİ <br><br>
+            <p class="footer_describer"> © 2022 PHOENİX BIOENERGY <br> ORMAN ÜRÜNLERİ SANAYİ VE DIŞ  <br>TİCARET LİMİTED ŞİRKETİ <br><br>
                 All rights reserved </p>
         </div>
         <div class="menu">
@@ -213,5 +216,6 @@
     </div>
 
 </footer>
+<script src="javascript.js" ></script>
 </body>
 </html>
