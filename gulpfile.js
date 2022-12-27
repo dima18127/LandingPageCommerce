@@ -25,6 +25,10 @@ gulp.task("image", function () {
     return src('src/**/*.{jpg,jpeg,png,svg,gif,webp}')
     .pipe(dest('dist'))
 })
+gulp.task("javascript", function () {
+    return src('src/**/*.js')
+    .pipe(dest('dist'))
+})
 
 gulp.task('scss', function() {
     return src('src/sass/**.scss')
@@ -52,10 +56,11 @@ gulp.task("serve", function() {
         },
         port: "3001"
     })
-    watch ('src/**.html', series('html')).on('change', browserSync .reload)
+    watch ('src/**/*.html', series('html')).on('change', browserSync .reload)
     watch ('src/sass/**/*.scss', series('scss')).on('change', browserSync .reload)
-    watch ('src/**/*.{jpg,jpeg,png,svg,gif,webp}', series('html')).on('change', browserSync .reload)
+    watch ('src/**/*.{jpg,jpeg,png,svg,gif,webp}', series('image')).on('change', browserSync .reload)
+    watch ('src/**/*.js', series('javascript')).on('change', browserSync .reload)
 })
 
- gulp.task('default', series('clean', 'scss' ,'html',"image", 'serve' ));
+ gulp.task('default', series('clean', 'scss' ,'html',"image","javascript", 'serve' ));
 //  gulp.parallel('serve');
