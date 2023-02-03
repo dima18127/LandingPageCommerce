@@ -1,0 +1,38 @@
+.about {
+    margin-top: 27px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        &__text {
+            display: block;
+            width: 657px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 145%;
+        }
+        &__image {
+            display: block;
+            height: 427px;
+            width: 429px;
+        }
+        // &__image:nth-child(1) {
+        //     position: absolute;
+        //     left: 0px;
+        //     top: -10px;
+        // }
+        &__image:nth-child(2) {
+            position: absolute;
+            right: 60px;
+            top: -90px;
+        }
+    }
+}
+// image {
+// }

@@ -1,0 +1,62 @@
+.wrapperPage {
+}
+.CompanyContacts {
+    margin-top: 30px;
+    display: flex;
+}
+.table {
+    padding: 24px;
+    display: flex;
+    min-height: 696px;
+    max-width: 585px;
+    background: #ffffff;
+    margin-right: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    justify-content: center;
+}
+.table tr {
+    margin-top: 10px;
+    max-width: 542px;
+    display: flex;
+    min-height: 30px;
+    justify-content: space-between;
+    padding: 0;
+}
+.table tr:first-child {
+    margin-top: 0px;
+}
+.table .tr_height_50px {
+    min-height: 50px;
+}
+.table tr:nth-child(odd) {
+    border: 1px solid #efefef;
+    background: #efefef;
+    border-radius: 5px;
+}
+.table tr:nth-child(even) {
+    border: 1px solid #efefef;
+    background: #ffffff;
+    border-radius: 5px;
+}
+.table td {
+    display: block;
+    padding: 8px 20px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 70%;
+    color: #181414;
+    white-space: pre-line;
+}
+.table td:nth-child(even) {
+    text-align: right;
+}
+.map {
+    width: 585px;
+    height: 696px;
+    // background: url(image.png);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
